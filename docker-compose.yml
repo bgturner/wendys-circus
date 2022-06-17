@@ -17,7 +17,7 @@ services:
       - db
     image: wordpress:latest
     volumes:
-      - src/wendys-circus:/var/www/html/wp-content/themes/wendys-circus
+      - ./src/wendys-circus:/var/www/html/wp-content/themes/wendys-circus
     ports:
       - "8000:80"
     restart: always
